@@ -179,7 +179,7 @@ std::string get_multipool_entry(bool& final)
 		std::cout << "Invalid weight.  Try 1, 10, 100, etc:" << std::endl;
 	}
 
-	final = !read_yes_no("- Do you want to add another pool? (y/N)", "N");
+	final = !read_yes_no("- Do you want to add another pool? (y/N)", "yes\n");
 
 	return "\t{\"pool_address\" : \"" + pool + "\", \"wallet_address\" : \"" + userName + "\", \"rig_id\" : \"" + rigid +
 		   "\", \"pool_password\" : \"" + passwd + "\", \"use_nicehash\" : " + bool_to_str(nicehash) + ", \"use_tls\" : " +
